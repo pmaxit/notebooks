@@ -1,0 +1,14 @@
+1. In longest increasing subsequence problem, if I divide the array
+in two halves 
+
+{ a1, a2, a3 .. an}
+
+S[i][j]     =     s[i][k] + s[k+1][j] then there is no way to solve the combination of these subarrays because we don't know the starting of subsequence.
+
+but if you divide the subsequence from starting
+S[i]    =   s[j]   ( j < i ) and get the maximum then 
+s[i]    =   1 + max(s[j]) if s[j] > s[i] ; otherwise 1 if no such j found;
+
+2. Same is true for wordwrap
+
+
